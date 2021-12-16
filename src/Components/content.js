@@ -1,19 +1,33 @@
-import handover_poss from "../Pics/handover_poss.jpg";
+import UpdatesCore from "./updates";
+import logo from "../Pics/BULERA_LOGO.png";
+import AdminCards from "./adminCards";
 function Content() {
   return (
     <div className="cont_data">
-        Hello world...
-          <h3> RECENT UPDATES </h3>
-        <div className="r_updates">
-        
-          <img src={handover_poss} alt="hand" className="update-post" />
-          <h4>BULERA CORE PTC GETS A NEW DPP</h4>
-          <p>
-            Mr. BYARUHANGA ALINDA SALVATORE is the new <b>Deputy Principal.</b> <br></br>
-            Mr. TINGIRAMURUNGI GALIMAK LUAMI Officially handed over to Mr. Alinda on Wednesday 11th-November-2021 in the presence of Our beloved Principal Okello Humphreys, Ms. Khaitsa Magaret (DPO) and Ms. Evath Kaahwa (DOS). <br></br>
-             <button>Read more...</button>
-          </p>
+        <div className="img_slider">
+           
+           <div className="img_slide_content">
+              <img src={logo} alt="bulera_logo" className="logob" /> 
+              <p>
+                <h2> BULERA CORE PTC - HOIMA </h2>
+                 <h4>P.O BOX 200, HOIMA (U) </h4>
+                 <hr className="border_g" />
+                 "Education For Responsibility"
+              </p>
+           </div>
         </div>
+        <div className="cards">
+          <AdminCards />
+        </div>
+
+        <div className="updatesy">
+            <h3> RECENT UPDATES </h3>
+              <div className="up1">
+                <UpdatesCore />
+                
+              </div>
+        </div>
+            
     </div>
   );
 }
